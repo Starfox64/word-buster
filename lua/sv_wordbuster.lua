@@ -66,7 +66,9 @@ hook.Add("PlayerSay", "WordBuster", function( ply, text, teamChat )
 			ply:SendLua("chat.AddText(Color(41, 128, 185), '"..wordBuster.notifyText.."')")
 		end
 	end
-	return text
+	if total > 0 then
+		return text
+	end
 end)
 
 concommand.Add("wordbuster_reload", function( ply )
