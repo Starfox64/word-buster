@@ -33,8 +33,8 @@ wordBuster.languages = {
 
 -- Whitelist: Groups allowed to use bad words.
 wordBuster.whitelist = {
-	["superadmin"] = false,
-	["admin"] = false,
+	["superadmin"] = true,
+	["admin"] = true,
 	["operator"] = false,
 	["user"] = false
 }
